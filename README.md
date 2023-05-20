@@ -9,7 +9,7 @@ SEO Text Helper is a React application that assists in optimizing SEO text by pr
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/seo-text-helper.git
+   git clone https://github.com/georgos-g/seo-text-helper.git
    ```
 
 2. Navigate to the project directory:
@@ -38,7 +38,7 @@ SEO Text Helper is a React application that assists in optimizing SEO text by pr
 
 2. Add the keywords by either pressing the "Enter" key or clicking the "Add keyword" button.
 
-3. The added keywords will be displayed below the input field.
+3. The added keywords will be displayed above the input field.
 
 4. Enter the SEO text in the textarea provided. The character count will update automatically.
 
