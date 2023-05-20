@@ -1,72 +1,60 @@
-# Project SEO Tool
+# SEO Text Helper
 
-# Getting Started with Create React App
+SEO Text Helper is a React application that assists in optimizing SEO text by providing keyword suggestions and character count tracking. It allows users to add keywords, compare them with the entered text, and provides a progress bar indicating the character count status. The application also offers a "Copy to Clipboard" feature for easy copying of the optimized text.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Installation
 
-## Available Scripts
+1. Clone the repository to your local machine:
 
-In the project directory, you can run:
+   ```bash
+   git clone https://github.com/your-username/seo-text-helper.git
+   ```
 
-### `npm start`
+2. Navigate to the project directory:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+   ```bash
+   cd seo-text-helper
+   ```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+3. Install the dependencies:
 
-### `npm test`
+   ```bash
+   npm install
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Start the development server:
 
-### `npm run build`
+   ```bash
+   npm start
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. Open your web browser and visit `http://localhost:3000` to access the application.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Enter the desired keywords in the "Keywords" section. Keywords are case-insensitive, and duplicates will not be added.
 
-### `npm run eject`
+2. Add the keywords by either pressing the "Enter" key or clicking the "Add keyword" button.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+3. The added keywords will be displayed below the input field.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Enter the SEO text in the textarea provided. The character count will update automatically.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+5. The progress bar will change color based on the character count. Green indicates a safe range, orange indicates reaching the limit, and red indicates exceeding the limit.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+6. Once the SEO text is optimized, click the "Copy to Clipboard" button to copy the text to your clipboard.
 
-## Learn More
+7. Paste the copied text in your desired location (e.g., meta description, website content) for optimized SEO.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
 
-### Code Splitting
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This project is licensed under the [MIT License](LICENSE).
 
-### Analyzing the Bundle Size
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Please note that you should replace the `https://github.com/your-username/seo-text-helper.git` URL with the correct repository URL for your project.
+```
