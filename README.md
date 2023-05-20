@@ -2,6 +2,8 @@
 
 SEO Text Helper is a React application that assists in optimizing SEO text by providing keyword suggestions and character count tracking. It allows users to add keywords, compare them with the entered text, and provides a progress bar indicating the character count status. The application also offers a "Copy to Clipboard" feature for easy copying of the optimized text.
 
+![SEO Text Helper Screenshot](screenshots/seo-text-helper.png)
+
 ## Installation
 
 1. Clone the repository to your local machine:
