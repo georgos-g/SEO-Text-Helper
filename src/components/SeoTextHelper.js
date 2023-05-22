@@ -20,7 +20,7 @@ export default function SeoTextHelper() {
   const [maxCount, setMaxCount] = useState(130);
 
   // Keywords
-  const [keywords, setKeywords] = useState([{ name: 'great product' }]);
+  const [keywords, setKeywords] = useState([{ name: 'best' }]);
   const [newKeyword, setNewKeyword] = useState('');
   const [keywordExist, setKeywordExist] = useState(false);
 
@@ -46,12 +46,18 @@ export default function SeoTextHelper() {
     if (newKeyword === '') {
       return;
     }
-    /* if new keyword exist set a span with message */
-
-    add({ name: newKeyword });
+    const keywordExists = keywords.some(
+      (item) => item.name.toLowerCase() === newKeyword.toLowerCase()
+    );
+    if (keywordExists) {
+      setKeywordExist(true);
+      setTimeout(() => {
+        setKeywordExist(false);
+      }, 1000);
+    } else {
+      add({ name: newKeyword });
+    }
     setNewKeyword('');
-    setKeywordExist(false);
-    console.log('newKeyword: ', newKeyword);
   };
 
   // Handle add newKeyword when enter is pressed
@@ -61,12 +67,9 @@ export default function SeoTextHelper() {
     }
   };
 
-  // Add keyword to seoKeywordGroup if keywordExist is false
+  // Get keywords from array
   let seoKeywordGroup = [];
-
-  if (keywordExist === false) {
-    seoKeywordGroup = [...new Set(keywords.map((keyword) => keyword.name))];
-  }
+  seoKeywordGroup = keywords.map((keyword) => keyword.name);
 
   // Search and compare Keywords with Textfield
   let searchString = seoKeywordGroup;
@@ -115,7 +118,7 @@ export default function SeoTextHelper() {
     <div className='flex w-[600px] justify-center'>
       <div className='max-w-4xl p-3 my-2 bg-gray-300 rounded-md sm:w-11/12 sm:mt-10 sm:p-8'>
         {/* Headline */}
-        <h1 className='text-2xl font-semibold text-center uppercase'>
+        <h1 className='pt-6 text-2xl font-semibold text-center uppercase sm:pt-1'>
           SEO Text Helper
         </h1>
 
@@ -138,7 +141,12 @@ export default function SeoTextHelper() {
           </div>
 
           {/* Keyword-input */}
-          <div className='flex justify-end text-center'>
+          <div className='relative flex justify-end pb-4 text-center'>
+            {keywordExist && (
+              <div className='absolute pr-2 ml-2 text-sm text-red-500 top-8 right-28'>
+                Keyword exist
+              </div>
+            )}
             <input
               className='px-2 py-1 rounded '
               type='text'
@@ -154,13 +162,6 @@ export default function SeoTextHelper() {
             >
               Add keyword
             </button>
-            {keywordExist &&
-              (console.log('keywordExist: ', keywordExist),
-              (
-                <span className='ml-2 text-sm text-red-500'>
-                  Keyword already exist
-                </span>
-              ))}
           </div>
         </div>
 

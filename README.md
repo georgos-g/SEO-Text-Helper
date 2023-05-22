@@ -51,12 +51,3 @@ SEO Text Helper is a React application that assists in optimizing SEO text by pr
 ## Contributing
 
 Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-```
-
-Please note that you should replace the `https://github.com/your-username/seo-text-helper.git` URL with the correct repository URL for your project.
-```
